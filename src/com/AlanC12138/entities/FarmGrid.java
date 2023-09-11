@@ -1,4 +1,4 @@
-package entities;
+package com.AlanC12138.entities;
 
 public class FarmGrid {
     private final int numRows = 5;

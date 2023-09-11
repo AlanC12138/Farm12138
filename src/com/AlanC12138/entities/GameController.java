@@ -1,4 +1,4 @@
-package entities;
+package com.AlanC12138.entities;
 
 public class GameController {
 }

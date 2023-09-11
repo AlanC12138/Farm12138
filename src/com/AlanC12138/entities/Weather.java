@@ -1,4 +1,4 @@
-package entities;
+package com.AlanC12138.entities;
 
 import java.util.Random;
 

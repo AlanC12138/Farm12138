@@ -1,4 +1,4 @@
-package entities;
+package com.AlanC12138.entities;
 
 public class FarmTile {
     private boolean isEmpty = true; // Whether the tile is empty or contains a crop
