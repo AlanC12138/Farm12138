@@ -1,5 +1,7 @@
 package com.AlanC12138.entities;
 
+import com.AlanC12138.render.RenderEngine;
+
 public class FarmGrid {
     private final int numRows = 5;
     private final int numColumns = 5;
@@ -30,5 +32,25 @@ public class FarmGrid {
     private boolean isValidLocation(int row, int col) {
         return row >= 0 && row < numRows && col >= 0 && col < numColumns;
     }
+
+    // Update method for the farm grid
+    public void update() {
+        // Implement any logic or changes that should occur during each game frame
+        // For example, update crop growth, weather effects, etc.
+    }
+
+    // Render method for the farm grid
+    public void render(RenderEngine renderEngine) {
+        // Render the visual representation of the farm grid using the provided render engine
+        for (int row = 0; row < numRows; row++) {
+            for (int col = 0; col < numColumns; col++) {
+                // Render each farm tile based on its state (e.g., empty, planted crop)
+                FarmTile tile = grid[row][col];
+                // You can use the renderEngine to draw the tile's visual representation
+                // Example: renderEngine.draw(tile.getImage(), col * tileSize, row * tileSize);
+            }
+        }
+    }
 }
+
 
